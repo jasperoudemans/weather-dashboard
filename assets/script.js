@@ -5,7 +5,7 @@ document.getElementById("searchBtn").addEventListener("click", fetchCity);
 function fetchCity() {
   const city = document.getElementById("searchInput").value;
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&units=imperial&appid=" +
     APIKey;
