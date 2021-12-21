@@ -19,6 +19,8 @@ function fetchChicago() {
     .then((data) => {
       console.log(data);
       document.getElementById("temp").textContent = data.main.temp;
+      document.getElementById("windSpeed").textContent = data.wind.speed;
+      document.getElementById("humidity").textContent = data.main.humidity;
     });
 }
 
